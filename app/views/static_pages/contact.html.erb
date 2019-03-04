@@ -1,7 +1,6 @@
-<% provide(:title, "Contact") %>
-<h1><%= h ".contact" %></h1>
-    <p>
-  		Contact the Ruby on Rails Tutorial about the sample app at the
-  		<a href="https://www.railstutorial.org/contact">contact page</a>.
-	</p>
-  </body>
+<% provide(:title, t(".contact")) %>
+<h1><%= t ".contact" %></h1>
+<p>
+  <%= t ".title" %>
+    <a href=<%= t ".link" %>><%= t ".title1" %></a>
+</p>

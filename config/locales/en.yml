@@ -1,16 +1,26 @@
 en:
   static_pages:
     home:
-      sample: "SAMPLE APP"
       home: "HOME"
-      title1: "This is the home page for the"
-      title2: "Ruby on Rails Tutorial"
+      welcome: "Welcome to the Sample App"
+      page: "This is the home page for the"
+      ruby: "Ruby on Rails Tutorial"
+      sample: "sample application."
+      sign: "Sign up now!"
+      link: "https://www.Railstutorial.org/"
+      title: "Rails logo"
+      title1: "Rails logo1"
+      link1: "http://rubyonrails.org/"
+      link2: "http://cdn.learnenough.com/"
     help:
       help: "HELP"
       title1: "Get help on the Ruby on Rails Tutorial at the"
       title2: "Rails Tutorial help page."
       title3: "To get help on this sample app, see the"
       title4: "Ruby on Rails Tutorial"
+      title5: "book"
+      link1: "https://www.railstutorial.org/help"
+      link2: "https://www.railstutorial.org/book"
     about:
       about: "ABOUT"
       title1: "Ruby on Rails Tutorial"
@@ -19,6 +29,40 @@ en:
       title4: "The"
       title5: "is a"
       title6: "and"
+      link: "https://www.railstutorial.org/about"
+      link1: "https://www.railstutorial.org/book"
+      link3: "http://screencasts.railstutorial.org/"
+      link4: "http://rubyonrails.org/"
+      book: "book"
+      title7: "screencast series"
+      title8: "Ruby on Rails"
+    contact:
+      contact: "CONTACT"
+      title: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      link: "https://www.railstutorial.org/contact"
+      title1: "contact page"
+  users:
+    new:
+      sign: "SIGN UP"
+      title: "This will be a signup page for new users."
+  layouts:
+    footer:
+      title: "The"
+      link: "https://www.Railstutorial.org/"
+      ruby: "Ruby on Rails Tutorial"
+      title1: "by"
+      link1: "http://www.michaelhartl.com/"
+      title2: "Michael Hartl"
+      link2: "http://news.railstutorial.org/"
+      title3: "News"
+      title4: "About"
+      title5: "Contact"
+    header:
+      title: "sample app"
+      title1: "logo"
+      title2: "Home"
+      title3: "Help"
+      title4: "Log in"
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
