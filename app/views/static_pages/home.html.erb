@@ -1,8 +1,12 @@
-<%= link_to "English", locale:"en" %>
-<%= link_to "Vietnamese", locale:"vi" %>
 <% provide :title, t(".home") %>
-  <h3>~~~~~<%= t ".home" %>~~~~~</h3>
-  <p>
-  	<%= t ".title1" %>
-  	<a href="https://www.railstutorial.org/">https://www.railstutorial.org</a> <%= t ".title2" %>
-  </p>
+<div class="center jumbotron">
+  <h1><%= t ".welcome" %></h1>
+  <h2>
+    <%= t ".page" %>
+    <%= link_to t(".ruby"), t(".link") %>
+    <%= t ".sample" %>
+  </h2>
+<%= link_to t(".sign"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: t(".title")), t(".link1") %>
+<%= link_to image_tag("kitten.png", alt: t(".title1")), t(".link2") %>

@@ -1,11 +1,12 @@
 <% provide(:title, t(".about")) %>
 <h1><%= t ".about" %></h1>
 <p>
-  <%= t ".title4" %> <a href="https://www.railstutorial.org/about">https://www.railstutorial.org/about</a>
-  <%= t ".title1" %>
+  <%= t ".title4" %> <%= link_to t(".title1"), t(".link") %>
   <%= t ".title5" %>
-  <a href="https://www.railstutorial.org/book">book</a> <%= t ".title6" %>
-  <a href="http://screencasts.railstutorial.org/">screencast series</a> <%= t ".title2" %>
-  <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+  <%= link_to t(".book"), t(".link1") %>
+  <%= t ".title6" %>
+  <%= link_to t(".title7"), t(".link3") %>
+  <%= t ".title2" %>
+  <%= link_to t(".title8"), t(".link4") %>
   <%= t ".title3" %>
 </p>

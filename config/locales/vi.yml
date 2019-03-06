@@ -1,6 +1,0 @@
-vi:
-  static_pages:
-    home:
-      home: "Trang chủ"
-      title1: "Đây là trang chủ cho"
-      title2: "hướng dẫn về Ruby on Rails"

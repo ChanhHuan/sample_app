@@ -1,8 +1,8 @@
 <% provide(:title, t(".help")) %>
 <h1><%= t ".help" %></h1>
-<p>
-  <%= t ".title1" %>
-  <a href="https://www.railstutorial.org/help">https://www.railstutorial.org/help</a> <%= t ".title2" %>
-  <%= t ".title3" %>
-  <a href="https://www.railstutorial.org/book">https://www.railstutorial.org/book</a>
-</p>
+  <p>
+    <%= t ".title1" %>
+    <%= link_to t(".title2"), t(".link1") %>
+    <%= t ".title3" %>
+    <%= link_to t(".title4"), t(".link2") %>
+  </p>
