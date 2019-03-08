@@ -1,5 +1,6 @@
 en:
   error: "Sorry, no data found"
+  error1: "Invalid email/password combination"
   static_pages:
     home:
       home: "HOME"
@@ -66,9 +67,17 @@ en:
       title2: "Home"
       title3: "Help"
       title4: "Log in"
+      title5: "Users"
+      title6: "Account"
+      title7: "Profile"
+      title8: "Settings"
+      title9: "Log out"
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
   shared:
     error_messages:    
       form: "The form contains"
+  sessions:
+    new:
+      new_user: "New user? "
