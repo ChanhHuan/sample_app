@@ -1,6 +1,10 @@
 en:
   error: "Sorry, no data found"
   error1: "Invalid email/password combination"
+  update: "Profile updated"
+  please: "Please log in."
+  delete: "User deleted"
+  undelete: "unsuccess delete"
   static_pages:
     home:
       home: "HOME"
@@ -49,6 +53,20 @@ en:
       title: "This will be a signup page for new users."
       create: "Create my account"
       label: "Confirmation"
+    edit:
+      edit: "Edit user"
+      save: "Save changes"
+      update: "Update your profile"
+    index:
+      all: "All users"
+    user:
+      delete_u: "delete"
+      confirm: "You sure?"
+    footer:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password_confirmation"
   layouts:
     footer:
       title: "The"
