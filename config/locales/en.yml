@@ -1,6 +1,20 @@
 en:
   error: "Sorry, no data found"
   error1: "Invalid email/password combination"
+  update: "Profile updated"
+  please: "Please log in."
+  delete: "User deleted"
+  undelete: "unsuccess delete"
+  check: "Please check your email to activate your account."
+  check_link: "Account not activated. Check your email for the activation link."
+  activated: "Account activated!"
+  invalid: "Invalid activation link"
+  click: "Welcome to the Sample App! Click on the link below to activate your account:"
+  ac: "Activate"
+  activation: "Account activation"
+  hi: "Hi"
+  link: "to@example.org"
+  err: "error"
   static_pages:
     home:
       home: "HOME"
@@ -49,6 +63,20 @@ en:
       title: "This will be a signup page for new users."
       create: "Create my account"
       label: "Confirmation"
+    edit:
+      edit: "Edit user"
+      save: "Save changes"
+      update: "Update your profile"
+    index:
+      all: "All users"
+    user:
+      delete_u: "delete"
+      confirm: "You sure?"
+    footer:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password_confirmation"
   layouts:
     footer:
       title: "The"

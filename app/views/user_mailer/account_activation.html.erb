@@ -1,0 +1,8 @@
+<h1><%= t "layouts.header.title" %></h1>
+<p>Hi <%= @user.name %>,</p>
+<p>
+  <%= t "click" %>
+</p>
+
+<%= link_to t("ac"), edit_account_activation_url(@user.activation_token,
+  email: @user.email) %>
