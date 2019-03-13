@@ -6,11 +6,16 @@ class UsersController < ApplicationController
 
   def index
     @users = User.paginate page: params[:page]
+<<<<<<< HEAD
   end
 
   def show
     @microposts = @user.microposts.paginate page: params[:page]
+=======
+>>>>>>> 5b8b7102c63a892c1b05b36a3cff094d3ddd728c
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -70,7 +75,10 @@ class UsersController < ApplicationController
   end
 
   def correct_user
+<<<<<<< HEAD
     @user = User.find params[:id]
+=======
+>>>>>>> 5b8b7102c63a892c1b05b36a3cff094d3ddd728c
     redirect_to(root_url) unless @user == current_user
   end
 

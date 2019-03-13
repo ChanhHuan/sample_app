@@ -4,4 +4,7 @@ password_length_min: 6
 size: 80
 remember: 1
 sizeindex: 50
+<<<<<<< HEAD
 max_validate: 140
+=======
+>>>>>>> 5b8b7102c63a892c1b05b36a3cff094d3ddd728c

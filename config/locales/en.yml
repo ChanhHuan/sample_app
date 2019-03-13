@@ -5,6 +5,7 @@ en:
   please: "Please log in."
   delete: "User deleted"
   undelete: "unsuccess delete"
+<<<<<<< HEAD
   check: "Please check your email to activate your account."
   check_link: "Account not activated. Check your email for the activation link."
   activated: "Account activated!"
@@ -23,6 +24,8 @@ en:
   this: "This link will expire in two hours."
   if: "If you did not request your password to be reset, please ignore this email and 
   your password will stay as it is."
+=======
+>>>>>>> 5b8b7102c63a892c1b05b36a3cff094d3ddd728c
   static_pages:
     home:
       home: "HOME"

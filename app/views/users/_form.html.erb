@@ -1,5 +1,9 @@
 <%= form_for(@user) do |f| %>
+<<<<<<< HEAD
   <%= render "shared/error_messages", object: f.object %>
+=======
+  <%= render "shared/error_messages", object: @user %>
+>>>>>>> 5b8b7102c63a892c1b05b36a3cff094d3ddd728c
 
   <%= f.label :name %>
   <%= f.text_field :name, class: "form-control" %>

@@ -9,9 +9,12 @@ class User < ApplicationRecord
     uniqueness: {case_sensitive: false}
   validates :password, presence: true, length:
     {minimum: Settings.password_length_min}, allow_nil: true
+<<<<<<< HEAD
   before_save   :downcase_email
   before_create :create_activation_digest
   has_many :microposts, dependent: :destroy
+=======
+>>>>>>> 5b8b7102c63a892c1b05b36a3cff094d3ddd728c
   has_secure_password
 
   class << self
