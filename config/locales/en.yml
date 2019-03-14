@@ -5,6 +5,16 @@ en:
   please: "Please log in."
   delete: "User deleted"
   undelete: "unsuccess delete"
+  check: "Please check your email to activate your account."
+  check_link: "Account not activated. Check your email for the activation link."
+  activated: "Account activated!"
+  invalid: "Invalid activation link"
+  click: "Welcome to the Sample App! Click on the link below to activate your account:"
+  ac: "Activate"
+  activation: "Account activation"
+  hi: "Hi"
+  link: "to@example.org"
+  err: "error"
   static_pages:
     home:
       home: "HOME"

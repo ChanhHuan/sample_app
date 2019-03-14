@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @users = User.paginate page: params[:page]
   end
 
-  def show; end
+  def show
+    redirect_to root_path && return unless @user.activated?
+  end
 
   def new
     @user = User.new
@@ -17,9 +19,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "static_pages.home.welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "check"
+      redirect_to root_path
     else
       render :new
     end
@@ -64,14 +66,14 @@ class UsersController < ApplicationController
     return if logged_in?
     store_location
     flash[:danger] = t "please"
-    redirect_to login_url
+    redirect_to login_path
   end
 
   def correct_user
-    redirect_to(root_url) unless current_user?(@user)
+    redirect_to root_path unless current_user?(@user)
   end
 
   def admin_user
-    redirect_to(root_url) unless current_user.admin?
+    redirect_to root_path unless current_user.admin?
   end
 end

@@ -4,12 +4,14 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    if @user&.authenticate(params[:session][:password])
-      log_in @user
-      if params[:session][:remember_me] == Settings.remember
-        remember @user
+    if @user.authenticate(params[:session][:password])
+      if @user.activated?
+        log_in @user
+        remember_user
+        redirect_back_or @user
       else
-        forget @user
+        flash[:warning] = t "check_link"
+        redirect_to root_path
       end
       redirect_back_or @user
     else
@@ -20,7 +22,7 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
-    redirect_to root_url
+    redirect_to root_path
   end
 
   private
@@ -28,7 +30,15 @@ class SessionsController < ApplicationController
   def load_user
     @user = User.find_by email: params[:session][:email].downcase
     return if @user
-    flash.now[:danger] = t "error1"
+    flash.now[:danger] = t "error"
     render :new
+  end
+
+  def remember_user
+    if params[:session][:remember_me] == Settings.remember
+      remember @user
+    else
+      forget @user
+    end
   end
 end
