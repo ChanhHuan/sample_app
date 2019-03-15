@@ -13,7 +13,6 @@ class SessionsController < ApplicationController
         flash[:warning] = t "check_link"
         redirect_to root_path
       end
-      redirect_back_or @user
     else
       flash.now[:danger] = t "error1"
       render :new

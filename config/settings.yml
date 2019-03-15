@@ -4,3 +4,4 @@ password_length_min: 6
 size: 80
 remember: 1
 sizeindex: 50
+pwd_reset: 2
