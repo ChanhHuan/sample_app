@@ -48,6 +48,12 @@ your password will stay as it is."
   picture_5MB: "should be less than 5MB"
   change: "change"
   max_file: "Maximum file size is 5MB. Please choose a smaller file."
+  followed_er: "followed error"
+  delete_followed: "Can't delete followed"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
   static_pages:
     home:
       home: "HOME"

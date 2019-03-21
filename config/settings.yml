@@ -8,3 +8,4 @@ pwd_reset: 2
 micropost_max: 140
 picture_size: 5
 resize: 200
+size_gravatar: 30

@@ -10,6 +10,10 @@ class UsersController < ApplicationController
 
   def show
     @microposts = @user.microposts.paginate page: params[:page]
+    return if current_user? @user
+    @follow = current_user.active_relationships.find_by followed_id: @user.id
+    return if @follow
+    @follow = current_user.active_relationships.build
   end
 
   def new
@@ -46,6 +50,18 @@ class UsersController < ApplicationController
       flash[:danger] = t "undelete"
       redirect_to root_path
     end
+  end
+
+  def following
+    @title = t "following"
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = t "followers"
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
   end
 
   private
